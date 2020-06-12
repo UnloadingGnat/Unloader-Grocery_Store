@@ -18,9 +18,9 @@ RED_PRESS = (128,320,64,64)
 PLAIN_BLOCK = (384,64,64,64)
 BLUE_BUTTON = (128,0,64,64)
 HAZ_TOP_TOP = (384,0,64,64)
-HAZ_TOP_R = (448,0,64,64)
-HAZ_MID_R = (448,64,64,64)
-HAZ_BOT_R = (448,128,64,64)
+HAZ_TOP_R = (448,0,63,64)
+HAZ_MID_R = (448,64,63,64)
+HAZ_BOT_R = (448,128,63,64)
 HAZ_BOT = (384,128,64,64)
 HAZ_BOT_L = (320,128,64,64)
 HAZ_MID_L = (320,64,64,64)
@@ -41,7 +41,8 @@ class Block(pygame.sprite.Sprite):
         """ Block constructor. Assumes the constant above are passed. """
         super().__init__()
 
-        sprite_sheet = SpriteSheet("assets/scifitiles-sheet.png")
+        # sprite_sheet = SpriteSheet("assets/scifitiles-sheet.png")
+        sprite_sheet = SpriteSheet("assets\scifitiles_resizedF.png")
         # Grab the image 
         self.image = sprite_sheet.get_image(sprite_sheet_data[0],
                                             sprite_sheet_data[1],
