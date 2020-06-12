@@ -3,13 +3,15 @@ Pygame CPT
 
 
 
-## Run mainunloader.py to start the game.
+# Run mainunloader.py to start the game.
 
 
 
-## Version History
+## Version History:
 v0.1.0 - https://github.com/UnloadingGnat/Unloader-Grocery_Store/releases/tag/0.1.0
 
+
+## Notable Commits:
 Commit 1: Half finished the map
 
 
