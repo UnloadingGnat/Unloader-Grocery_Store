@@ -12,7 +12,7 @@ v0.1.0 - https://github.com/UnloadingGnat/Unloader-Grocery_Store/releases/tag/0.
 
 
 ## Notable Commits:
-Commit 1: Half finished the map
+first commit: Half finished the map
 
 
 ![Image of Map](https://raw.githubusercontent.com/UnloadingGnat/Unloader-Grocery_Store/master/unloader8.png)
