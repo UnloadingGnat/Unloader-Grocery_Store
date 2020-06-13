@@ -32,6 +32,8 @@ HAZ_CORNER_TRBR = (704,128,64,64)
 # subtract 46 more for the y
 BOX_BLANK = (0,149,64,110)
 BOX_RED_SCREEN = (64,159,64,97)
+# Red Door
+RED_DOOR = (128,256,64,64)
 
 
 class Block(pygame.sprite.Sprite):

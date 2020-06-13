@@ -63,10 +63,14 @@ class Level_01(Level):
                   [tiles.LOADER_R,656,236],
                   [tiles.HAZ_CORNER_TRBR,336,300],
                   [tiles.HAZ_BOT_R,336,364],
+                  [tiles.SHADOW,336,428],
+                  [tiles.SHADOW,272,428],
+                  [tiles.SHADOW,208,428],
                   [tiles.HAZ_BOT,272,364],
                   [tiles.HAZ_BOT_L,208,364],
                   [tiles.PLAIN_BLOCK,272,300],
                   [tiles.RED_PRESS,208,300],
+                  [tiles.RED_DOOR,208,236],
                   [tiles.HAZ_TOP_R,336,236],
                   [tiles.BOX_RED_SCREEN,272,204]
                  ]
