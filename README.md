@@ -8,7 +8,7 @@ Pygame CPT
 
 
 ## Version History:
-v0.1.0 - https://github.com/UnloadingGnat/Unloader-Grocery_Store/releases/tag/0.1.0
+v0.1.0(Checkpoint 1) - https://github.com/UnloadingGnat/Unloader-Grocery_Store/releases/tag/0.1.0
 
 
 ## Notable Commits:

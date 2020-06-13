@@ -42,6 +42,7 @@ class Level_01(Level):
 
         Level.__init__(self)
         # Array with type of tile, and x, y location of the platform.
+        # Every block in the map
         level = [ [tiles.HAZ_BAR_TB,400,300],
                   [tiles.HAZ_CORNER_TLBL,464,300],
                   [tiles.HAZ_MID_L,464,236],
