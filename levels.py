@@ -70,7 +70,10 @@ class Level_01(Level):
                   [tiles.HAZ_BOT_L,208,364],
                   [tiles.PLAIN_BLOCK,272,300],
                   [tiles.RED_PRESS,208,300],
+                  [tiles.BOX_BLANK,144,259],
+                  [tiles.BOX_BEHIND,144,207],
                   [tiles.RED_DOOR,208,236],
+                  [tiles.LOADER_U,208,172],
                   [tiles.HAZ_TOP_R,336,236],
                   [tiles.BOX_RED_SCREEN,272,204]
                  ]

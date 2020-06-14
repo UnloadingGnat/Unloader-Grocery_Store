@@ -14,6 +14,7 @@ from spritesheet_functions import SpriteSheet
 
 SHADOW = (128,64,64,55)
 LOADER_R = (64,64,60,80)
+LOADER_U = (0,0,62,64)
 RED_PRESS = (128,320,64,64) 
 PLAIN_BLOCK = (384,64,64,64)
 BLUE_BUTTON = (128,0,64,64)
@@ -32,6 +33,7 @@ HAZ_CORNER_TRBR = (704,128,64,64)
 # subtract 46 more for the y
 BOX_BLANK = (0,149,64,110)
 BOX_RED_SCREEN = (64,159,64,97)
+BOX_BEHIND = (0,160,64,64)
 # Red Door
 RED_DOOR = (128,256,64,64)
 
