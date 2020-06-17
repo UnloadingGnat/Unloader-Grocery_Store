@@ -37,7 +37,7 @@ BOX_BEHIND = (0,160,64,64)
 # Red Door
 RED_DOOR = (128,256,64,64)
 
-food = (28,27,28,27)
+food = (0,0,28,27)
 
 
 class Block(pygame.sprite.Sprite):

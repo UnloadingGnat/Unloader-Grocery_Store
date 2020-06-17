@@ -23,6 +23,7 @@ from player import Player
 def main():
     """ Main Program """
     pygame.init()
+    pygame.mixer.init()
 
     # Set the height and width of the screen
     size = [constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT]
@@ -62,6 +63,10 @@ def main():
     pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
     pygame.mixer.music.play()
 
+    wall_sound = pygame.mixer.Sound("assets\iump.ogg")
+
+
+
 
     # -------- Main Program Loop -----------
     while not done:
@@ -96,6 +101,11 @@ def main():
 
 
         # Update the player.
+        if player.play_sound == True:
+            wall_sound.play()
+            player.play_sound = False
+
+
         active_sprite_list.update()
 
         # Update items in the level      

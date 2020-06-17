@@ -25,7 +25,7 @@ class Player(pygame.sprite.Sprite):
         # Set speed
         self.change_x = 0
         self.change_y = 0
-
+        self.play_sound = False
         # This holds all the images for the animated walk left/right
         # of our player
         self.walking_frames_l = []
@@ -108,15 +108,19 @@ class Player(pygame.sprite.Sprite):
         # Move left/right
         if self.rect.x < 200:
             self.rect.x += 1
+            self.play_sound = True
         elif self.rect.x > 628:
             self.rect.x -= 1
+            self.play_sound = True
         else:
             self.rect.x += self.change_x
         # Move up/down
-        if self.rect.y < 171:
+        if self.rect.y < 140:
             self.rect.y += 1
+            self.play_sound = True
         elif self.rect.y > 380:
             self.rect.y -= 1
+            self.play_sound = True
         else:
             self.rect.y += self.change_y
         pos = self.rect.x
