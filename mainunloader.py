@@ -35,14 +35,21 @@ def main():
 
     # Create all the levels
     level_list = []
-    level_list.append(levels.Level_01())
+    level_list.append(levels.Level_01(player))
 
     # Set the current level
     current_level_no = 0
     current_level = level_list[current_level_no]
 
-
     active_sprite_list = pygame.sprite.Group()
+    player.level = current_level
+
+    player.rect.x = 400
+    player.rect.y = 300
+    active_sprite_list.add(player)
+
+
+   
 
     #Loop until the user clicks the close button.
     done = False
@@ -55,6 +62,31 @@ def main():
         for event in pygame.event.get():  # User did something
             if event.type == pygame.QUIT:  # If user clicked close
                 done = True  # Flag that we are done so we exit this loop
+
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
+                    player.go_left()
+                if event.key == pygame.K_RIGHT:
+                    player.go_right()
+                if event.key == pygame.K_UP:
+                    player.go_up()
+                if event.key == pygame.K_DOWN:
+                    player.go_down()
+
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_LEFT and player.change_x < 0:
+                    player.stop()
+                if event.key == pygame.K_RIGHT and player.change_x > 0:
+                    player.stop()
+                if event.key == pygame.K_DOWN and player.change_y > 0:
+                    player.stop()
+                if event.key == pygame.K_UP and player.change_y < 0:
+                    player.stop()
+                
+
+
+
+
 
         # Update the player.
         active_sprite_list.update()

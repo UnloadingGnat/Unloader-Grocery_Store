@@ -37,7 +37,7 @@ class Player(pygame.sprite.Sprite):
         # What direction is the player facing?
         self.direction = "D"
 
-        sprite_sheet = SpriteSheet("assets\sans.png")
+        sprite_sheet = SpriteSheet("assets\Characterresizeclear.png")
         # Load all the right facing images into a list
         image = sprite_sheet.get_image(0,158,33,42)
         self.walking_frames_r.append(image)
@@ -78,23 +78,23 @@ class Player(pygame.sprite.Sprite):
 
         # Load all the upward facing images into a list
         image = sprite_sheet.get_image(0, 53, 34, 50)
-        self.walking_frames_r.append(image)
-        image = sprite_sheet.get_image(34, 158, 34, 42)
-        self.walking_frames_r.append(image)
-        image = sprite_sheet.get_image(68, 158, 32, 42)
-        self.walking_frames_r.append(image)
-        image = sprite_sheet.get_image(100, 158, 34, 42)
-        self.walking_frames_r.append(image)
+        self.walking_frames_u.append(image)
+        image = sprite_sheet.get_image(34, 53, 34, 42)
+        self.walking_frames_u.append(image)
+        image = sprite_sheet.get_image(68, 53, 32, 42)
+        self.walking_frames_u.append(image)
+        image = sprite_sheet.get_image(100, 53, 34, 42)
+        self.walking_frames_u.append(image)
 
         # Load all the downward facing images into a list
         image = sprite_sheet.get_image(0, 0, 34, 51)
-        self.walking_frames_r.append(image)
+        self.walking_frames_d.append(image)
         image = sprite_sheet.get_image(34, 0, 34, 50)
-        self.walking_frames_r.append(image)
+        self.walking_frames_d.append(image)
         image = sprite_sheet.get_image(68, 0, 34, 50)
-        self.walking_frames_r.append(image)
-        image = sprite_sheet.get_image(102, 0, 34, 50)
-        self.walking_frames_r.append(image)
+        self.walking_frames_d.append(image)
+        image = sprite_sheet.get_image(102, 0, 30, 50)
+        self.walking_frames_d.append(image)
 
         # Set the image the player starts with
         self.image = self.walking_frames_d[0]
@@ -110,6 +110,7 @@ class Player(pygame.sprite.Sprite):
         # Move up/down
         self.rect.y += self.change_y
         pos = self.rect.x
+        posud = self.rect.y
         if self.direction == "R":
             frame = (pos // 30) % len(self.walking_frames_r)
             self.image = self.walking_frames_r[frame]
@@ -117,10 +118,10 @@ class Player(pygame.sprite.Sprite):
             frame = (pos // 30) % len(self.walking_frames_l)
             self.image = self.walking_frames_l[frame]
         elif self.direction == "D":
-            frame = (pos // 30) % len(self.walking_frames_d)
+            frame = (posud // 30) % len(self.walking_frames_d)
             self.image = self.walking_frames_d[frame]
-        else:
-            frame = (pos // 30) % len(self.walking_frames_u)
+        elif self.direction == "U":
+            frame = (posud // 30) % len(self.walking_frames_u)
             self.image = self.walking_frames_u[frame]
 
 
@@ -130,7 +131,7 @@ class Player(pygame.sprite.Sprite):
 
     def go_down(self):
         """ Called when the user hits the down arrow. """
-        self.change_x = 6
+        self.change_y = 6
         self.direction = "D"
 
     def go_up(self):
@@ -151,3 +152,4 @@ class Player(pygame.sprite.Sprite):
     def stop(self):
         """ Called when the user lets off the keyboard. """
         self.change_x = 0
+        self.change_y = 0

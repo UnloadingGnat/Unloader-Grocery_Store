@@ -18,6 +18,7 @@ class Level():
         self.backround = None
 
         self.block_list = pygame.sprite.Group()
+        self.player = player
 
     # Update everything on this level
     def update(self):
@@ -40,7 +41,7 @@ class Level_01(Level):
 
     def __init__(self,player):
 
-        Level.__init__(self,player)
+        Level.__init__(self, player)
         # Array with type of tile, and x, y location of the platform.
         # Every block in the map
         level = [ [tiles.HAZ_BAR_TB,400,300],
