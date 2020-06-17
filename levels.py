@@ -79,6 +79,9 @@ class Level_01(Level):
                   [tiles.BOX_RED_SCREEN,272,204]
                  ]
 
+
+        food_list = [[tiles.food,50,50]]
+
         # Go through the array above and add tiles
         for mapTile in level:
             block = tiles.Block(mapTile[0])
@@ -86,5 +89,11 @@ class Level_01(Level):
             block.rect.y = mapTile[2]
             block.player = self.player
             self.block_list.add(block)
- 
-    
+
+        for fooditem in food_list:
+            apple = tiles.Food(fooditem[0])
+            apple.rect.x = fooditem[1]
+            apple.rect.y = fooditem[2]
+            self.block_list.add(apple)
+
+

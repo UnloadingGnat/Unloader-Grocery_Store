@@ -37,6 +37,8 @@ BOX_BEHIND = (0,160,64,64)
 # Red Door
 RED_DOOR = (128,256,64,64)
 
+food = (28,27,28,27)
+
 
 class Block(pygame.sprite.Sprite):
     """ A Block from a sprite sheet """
@@ -55,6 +57,17 @@ class Block(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
+class Food(pygame.sprite.Sprite):
 
-        
+       def __init__(self, sprite_sheet_data):
+        """ Block constructor. Assumes the constant above are passed. """
+        super().__init__()
 
+        food_sprite_sheet = SpriteSheet("assets\golden.png")
+        # Grab the image
+        self.image = food_sprite_sheet.get_image(sprite_sheet_data[0],
+                                            sprite_sheet_data[1],
+                                            sprite_sheet_data[2],
+                                            sprite_sheet_data[3])
+
+        self.rect = self.image.get_rect()
