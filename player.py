@@ -106,9 +106,19 @@ class Player(pygame.sprite.Sprite):
         """ Move the player. """
 
         # Move left/right
-        self.rect.x += self.change_x
+        if self.rect.x < 200:
+            self.rect.x += 1
+        elif self.rect.x > 628:
+            self.rect.x -= 1
+        else:
+            self.rect.x += self.change_x
         # Move up/down
-        self.rect.y += self.change_y
+        if self.rect.y < 171:
+            self.rect.y += 1
+        elif self.rect.y > 380:
+            self.rect.y -= 1
+        else:
+            self.rect.y += self.change_y
         pos = self.rect.x
         posud = self.rect.y
         if self.direction == "R":
@@ -125,9 +135,14 @@ class Player(pygame.sprite.Sprite):
             self.image = self.walking_frames_u[frame]
 
 
-
-
     # Player-controlled movement:
+
+    def stop(self):
+        """ Called when the user lets off the keyboard. """
+        self.change_x = 0
+        self.change_y = 0
+
+
 
     def go_down(self):
         """ Called when the user hits the down arrow. """
@@ -149,7 +164,3 @@ class Player(pygame.sprite.Sprite):
         self.change_x = 6
         self.direction = "R"
 
-    def stop(self):
-        """ Called when the user lets off the keyboard. """
-        self.change_x = 0
-        self.change_y = 0
