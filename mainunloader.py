@@ -49,7 +49,7 @@ def main():
     active_sprite_list.add(player)
 
 
-   
+ 
 
     #Loop until the user clicks the close button.
     done = False
@@ -82,7 +82,7 @@ def main():
                     player.stop()
                 if event.key == pygame.K_UP and player.change_y < 0:
                     player.stop()
-                
+             
 
 
 
@@ -91,8 +91,7 @@ def main():
         # Update the player.
         active_sprite_list.update()
 
-        # Update items in the level
-        
+        # Update items in the level      
         current_level.update()
 
 

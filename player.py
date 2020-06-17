@@ -37,9 +37,9 @@ class Player(pygame.sprite.Sprite):
         # What direction is the player facing?
         self.direction = "D"
 
-        sprite_sheet = SpriteSheet("assets\Characterresizeclear.png")
+        sprite_sheet = SpriteSheet("assets\Char2.png")
         # Load all the right facing images into a list
-        image = sprite_sheet.get_image(0,158,33,42)
+        image = sprite_sheet.get_image(0, 158, 33,42)
         self.walking_frames_r.append(image)
         image = sprite_sheet.get_image(34, 155, 33, 42)
         self.walking_frames_r.append(image)

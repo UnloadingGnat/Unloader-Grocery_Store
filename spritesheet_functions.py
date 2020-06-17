@@ -26,6 +26,8 @@ class SpriteSheet(object):
         # Copy the sprite from the large sheet onto the smaller image
         image.blit(self.sprite_sheet, (0, 0), (x, y, width, height))
 
+        # Assuming black works as the transparent color
+        image.set_colorkey(constants.WHITE)
 
         # Return the image
         return image
