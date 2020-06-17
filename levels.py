@@ -8,7 +8,7 @@ class Level():
     """ This is a generic super-class used to define a level.
         Create a child class for each level with level-specific
         info. """
-    def __init__(self):
+    def __init__(self,player):
         """ Constructor """
 
         # Lists of sprites used in all levels
@@ -38,9 +38,9 @@ class Level():
 class Level_01(Level):
     """ Definition for level 1. """
 
-    def __init__(self):
+    def __init__(self,player):
 
-        Level.__init__(self)
+        Level.__init__(self,player)
         # Array with type of tile, and x, y location of the platform.
         # Every block in the map
         level = [ [tiles.HAZ_BAR_TB,400,300],
@@ -83,6 +83,7 @@ class Level_01(Level):
             block = tiles.Block(mapTile[0])
             block.rect.x = mapTile[1]
             block.rect.y = mapTile[2]
+            block.player = self.player
             self.block_list.add(block)
  
     

@@ -13,6 +13,8 @@ import pygame
 import constants
 import levels
 
+from player import Player
+
 # add this later
 # from player import Player
 
@@ -27,6 +29,9 @@ def main():
     screen = pygame.display.set_mode(size)
 
     pygame.display.set_caption("Unloader: Grocery Store Edition")
+
+    # Create the user's player
+    player = Player()
 
     # Create all the levels
     level_list = []
