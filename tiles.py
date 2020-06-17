@@ -65,6 +65,7 @@ class Food(pygame.sprite.Sprite):
 
         self.player = None
         self.level = None
+        
 
         food_sprite_sheet = SpriteSheet("assets\golden.png")
         # Grab the image
@@ -77,11 +78,10 @@ class Food(pygame.sprite.Sprite):
 
     def update(self):
         """ Check if player hits apple """
-
-        collect = False
-        # See if we hit the player
         hit = pygame.sprite.collide_rect(self, self.player)
-
         if hit:
-            collect = True
+            print("HIT")
+            
+
+        
 

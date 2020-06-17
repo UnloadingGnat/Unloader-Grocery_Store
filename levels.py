@@ -19,6 +19,7 @@ class Level():
 
         self.block_list = pygame.sprite.Group()
         self.player = player
+        
 
     # Update everything on this level
     def update(self):

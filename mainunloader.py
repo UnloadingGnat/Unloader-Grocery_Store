@@ -12,6 +12,7 @@ import pygame
 
 import constants
 import levels
+from tiles import Food
 
 from player import Player
 
@@ -100,11 +101,9 @@ def main():
                 if event.key == pygame.K_UP and player.change_y < 0:
                     player.stop()
              
-
+    
         
-
-
-
+    
         # Update the player.
         if player.play_sound == True:
             wall_sound.play()
