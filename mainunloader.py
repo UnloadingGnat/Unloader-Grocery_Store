@@ -82,23 +82,23 @@ def main():
             print(event)
 
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:
+                if event.key == pygame.K_a:
                     player.go_left()
-                if event.key == pygame.K_RIGHT:
+                if event.key == pygame.K_d:
                     player.go_right()
-                if event.key == pygame.K_UP:
+                if event.key == pygame.K_w:
                     player.go_up()
-                if event.key == pygame.K_DOWN:
+                if event.key == pygame.K_s:
                     player.go_down()
 
             if event.type == pygame.KEYUP:
-                if event.key == pygame.K_LEFT and player.change_x < 0:
+                if event.key == pygame.K_a and player.change_x < 0:
                     player.stop()
-                if event.key == pygame.K_RIGHT and player.change_x > 0:
+                if event.key == pygame.K_d and player.change_x > 0:
                     player.stop()
-                if event.key == pygame.K_DOWN and player.change_y > 0:
+                if event.key == pygame.K_s and player.change_y > 0:
                     player.stop()
-                if event.key == pygame.K_UP and player.change_y < 0:
+                if event.key == pygame.K_w and player.change_y < 0:
                     player.stop()
              
     
