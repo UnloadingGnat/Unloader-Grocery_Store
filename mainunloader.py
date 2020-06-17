@@ -57,6 +57,12 @@ def main():
     # Used to manage how fast the screen updates
     clock = pygame.time.Clock()
 
+
+    pygame.mixer.music.load('assets\Initial D - Deja Vu.mp3')
+    pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
+    pygame.mixer.music.play()
+
+
     # -------- Main Program Loop -----------
     while not done:
         for event in pygame.event.get():  # User did something
