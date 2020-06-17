@@ -59,9 +59,12 @@ class Block(pygame.sprite.Sprite):
 
 class Food(pygame.sprite.Sprite):
 
-       def __init__(self, sprite_sheet_data):
+    def __init__(self, sprite_sheet_data):
         """ Block constructor. Assumes the constant above are passed. """
         super().__init__()
+
+        self.player = None
+        self.level = None
 
         food_sprite_sheet = SpriteSheet("assets\golden.png")
         # Grab the image
@@ -71,3 +74,14 @@ class Food(pygame.sprite.Sprite):
                                             sprite_sheet_data[3])
 
         self.rect = self.image.get_rect()
+
+    def update(self):
+        """ Check if player hits apple """
+
+        collect = False
+        # See if we hit the player
+        hit = pygame.sprite.collide_rect(self, self.player)
+
+        if hit:
+            collect = True
+

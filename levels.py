@@ -80,7 +80,7 @@ class Level_01(Level):
                  ]
 
 
-        food_list = [[tiles.food,50,50]]
+        food_list = [[tiles.food,620,250]]
 
         # Go through the array above and add tiles
         for mapTile in level:
@@ -90,10 +90,11 @@ class Level_01(Level):
             block.player = self.player
             self.block_list.add(block)
 
-        for fooditem in food_list:
-            apple = tiles.Food(fooditem[0])
-            apple.rect.x = fooditem[1]
-            apple.rect.y = fooditem[2]
-            self.block_list.add(apple)
+        apple = tiles.Food(food_list[0][0])
+        apple.rect.x = food_list[0][1]
+        apple.rect.y = food_list[0][2]
+        apple.player = self.player
+        apple.level = self
+        self.block_list.add(apple)
 
 

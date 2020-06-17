@@ -38,6 +38,11 @@ def main():
     level_list = []
     level_list.append(levels.Level_01(player))
 
+    # Points
+    point = 0
+
+
+
     # Set the current level
     current_level_no = 0
     current_level = level_list[current_level_no]
@@ -96,7 +101,7 @@ def main():
                     player.stop()
              
 
-
+        
 
 
 
