@@ -82,8 +82,6 @@ def main():
             print(event)
 
 
-             
-
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
                     player.go_left()
@@ -103,7 +101,6 @@ def main():
                     player.stop()
                 if event.key == pygame.K_UP and player.change_y < 0:
                     player.stop()
-
 
         
     
