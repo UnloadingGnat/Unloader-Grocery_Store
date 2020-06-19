@@ -3,8 +3,7 @@
 # @author Jaavin M
 # @course ICS3UC
 # @date 09/06/2020
-#
-
+# v 1.1
 
 
 
@@ -79,7 +78,6 @@ def main():
         for event in pygame.event.get():  # User did something
             if event.type == pygame.QUIT:  # If user clicked close
                 done = True  # Flag that we are done so we exit this loop
-            print(event)
 
 
             if event.type == pygame.KEYDOWN:
