@@ -11,7 +11,7 @@ from spritesheet_functions import SpriteSheet
 
 
 class Player(pygame.sprite.Sprite):
-    """ This class represents the bar at the bottom that the player
+    """ This class represents the grocery store worker that the player
     controls. """
 
     # -- Methods

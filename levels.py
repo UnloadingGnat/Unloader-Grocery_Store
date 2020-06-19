@@ -77,7 +77,8 @@ class Level_01(Level):
                   [tiles.RED_DOOR,208,236],
                   [tiles.LOADER_U,208,172],
                   [tiles.HAZ_TOP_R,336,236],
-                  [tiles.BOX_RED_SCREEN,272,204]
+                  [tiles.BOX_RED_SCREEN,272,204],
+                  [tiles.SHADOW, 144, 365],
                  ]
 
 
@@ -91,6 +92,8 @@ class Level_01(Level):
             block.player = self.player
             self.block_list.add(block)
 
+
+        # seperate array to add the Food object/tile
         apple = tiles.Food(food_list[0][0])
         apple.rect.x = food_list[0][1]
         apple.rect.y = food_list[0][2]

@@ -58,6 +58,7 @@ class Block(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
 class Food(pygame.sprite.Sprite):
+    """ A Block from a sprite sheet with update method to detect collisions """
 
     def __init__(self, sprite_sheet_data):
         """ Block constructor. Assumes the constant above are passed. """

@@ -1,6 +1,6 @@
 ##
 # Unloader: Grocery Store Edition
-# @author ####### UNLOADING GNAT(PUBLIC)
+# @author Jaavin M
 # @course ICS3UC
 # @date 09/06/2020
 #
@@ -40,7 +40,7 @@ def main():
     level_list.append(levels.Level_01(player))
 
     # Points
-    point = 0
+    # point = 0
 
 
 
