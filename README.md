@@ -1,6 +1,7 @@
 # Unloader: Grocery Store Edition
 Pygame CPT
 
+[test](https://badgen.net/github/release/UnloadingGnat/Unloader-Grocery_Store)
 https://badgen.net/github/release/UnloadingGnat/Unloader-Grocery_Store
 
 
