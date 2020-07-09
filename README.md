@@ -1,9 +1,8 @@
-![build passing](https://raw.githubusercontent.com/dwyl/repo-badges/master/highresPNGs/build-passing.png)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/UnloadingGnat/Unloader-Grocery_Store)
+
 
 # Unloader: Grocery Store Edition
 Pygame CPT
-
-![test](https://badgen.net/github/release/UnloadingGnat/Unloader-Grocery_Store)
 
 
 
