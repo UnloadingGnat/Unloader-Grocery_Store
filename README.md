@@ -1,5 +1,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/UnloadingGnat/Unloader-Grocery_Store)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/UnloadingGnat/Unloader-Grocery_Store)
+![GitHub stars](https://img.shields.io/github/stars/UnloadingGnat/Unloader-Grocery_Store?style=social)
 
 
 # Unloader: Grocery Store Edition
