@@ -25,3 +25,9 @@ first commit: Half finished the map
 
 
 [Video showcasing features](http://thegnat.pythonanywhere.com/about)
+
+
+
+
+
+https://shields.io/
