@@ -1,6 +1,8 @@
 # Unloader: Grocery Store Edition
 Pygame CPT
 
+https://badgen.net/github/release/UnloadingGnat/Unloader-Grocery_Store
+
 
 
 # Run mainunloader.py to start the game.
