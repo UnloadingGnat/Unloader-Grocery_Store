@@ -1,3 +1,4 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/UnloadingGnat/Unloader-Grocery_Store)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/UnloadingGnat/Unloader-Grocery_Store)
 
 
