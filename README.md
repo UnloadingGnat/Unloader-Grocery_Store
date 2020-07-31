@@ -18,6 +18,8 @@ first commit: Half finished the map
 
 ![Image of Map](https://raw.githubusercontent.com/UnloadingGnat/Unloader-Grocery_Store/master/unloader8.png)
 
+git clone  https://github.com/UnloadingGnat/Unloader-Grocery_Store.git --branch 1.1
+
 
 
 [Video showcasing features](http://thegnat.pythonanywhere.com/about)

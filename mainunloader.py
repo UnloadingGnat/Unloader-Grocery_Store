@@ -5,19 +5,15 @@
 # @date 09/06/2020
 # v 1.1
 
-
-
 import pygame
 
 import constants
 import levels
-from tiles import Food
 
 from player import Player
 
 # add this later
 # from player import Player
-
 
 
 def main():
@@ -40,46 +36,30 @@ def main():
 
     # Points
     # point = 0
-
-
-
     # Set the current level
     current_level_no = 0
     current_level = level_list[current_level_no]
-
     active_sprite_list = pygame.sprite.Group()
     player.level = current_level
-
     player.rect.x = 400
     player.rect.y = 300
     active_sprite_list.add(player)
 
-
- 
-
-    #Loop until the user clicks the close button.
+    # Loop until the user clicks the close button.
     done = False
-
     # Used to manage how fast the screen updates
     clock = pygame.time.Clock()
-
-
-    pygame.mixer.music.load('assets\Initial D - Deja Vu.mp3')
+    pygame.mixer.music.load('assets\\Initial D - Deja Vu.mp3')
     pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
     pygame.mixer.music.play()
 
-    wall_sound = pygame.mixer.Sound("assets\iump.ogg")
-
-
-
+    wall_sound = pygame.mixer.Sound("assets\\iump.ogg")
 
     # -------- Main Program Loop -----------
     while not done:
         for event in pygame.event.get():  # User did something
             if event.type == pygame.QUIT:  # If user clicked close
                 done = True  # Flag that we are done so we exit this loop
-
-
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
                     player.go_left()
@@ -98,22 +78,15 @@ def main():
                 if event.key == pygame.K_DOWN and player.change_y > 0:
                     player.stop()
                 if event.key == pygame.K_UP and player.change_y < 0:
-                    player.stop()
-
-        
-    
+                    player.stop()   
         # Update the player.
-        if player.play_sound == True:
+        if player.play_sound:
             wall_sound.play()
             player.play_sound = False
-
-
         active_sprite_list.update()
 
         # Update items in the level      
-        current_level.update()
-
-
+        current_level.update()  
         # ALL CODE TO DRAW SHOULD GO BELOW THIS COMMENT
         current_level.draw(screen)
         active_sprite_list.draw(screen)
