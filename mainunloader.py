@@ -78,15 +78,15 @@ def main():
                 if event.key == pygame.K_DOWN and player.change_y > 0:
                     player.stop()
                 if event.key == pygame.K_UP and player.change_y < 0:
-                    player.stop()   
-        # Update the player.
+                    player.stop()
+        # Update the player
         if player.play_sound:
             wall_sound.play()
             player.play_sound = False
         active_sprite_list.update()
 
-        # Update items in the level      
-        current_level.update()  
+        # Update items in the level
+        current_level.update()
         # ALL CODE TO DRAW SHOULD GO BELOW THIS COMMENT
         current_level.draw(screen)
         active_sprite_list.draw(screen)
