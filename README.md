@@ -25,7 +25,9 @@ first commit: Half finished the map
 
 ![Image of Map](https://raw.githubusercontent.com/UnloadingGnat/Unloader-Grocery_Store/master/unloader8.png)
 
-[Video showcasing features](http://thegnat.pythonanywhere.com/about)
+
+REAL LINK:
+[Video showcasing features](https://www.youtube.com/watch?v=NHufWt0N40A)
 ![YouTube Video Views](https://img.shields.io/youtube/views/NHufWt0N40A?style=social)
 
 
