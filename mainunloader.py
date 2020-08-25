@@ -1,6 +1,6 @@
 ##
 # Unloader: Grocery Store Edition
-# @author Jaavin M
+# @author UnloadingGnat
 # @course ICS3UC
 # @date 09/06/2020
 # v 1.1
